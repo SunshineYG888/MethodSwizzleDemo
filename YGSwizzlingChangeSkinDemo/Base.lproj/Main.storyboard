@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9J-d6-7QR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="39"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Skin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7z-8X-WzR">
+                                        <rect key="frame" x="8" y="9" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnK-5v-oLX">
+                                        <rect key="frame" x="58" y="5" width="96" height="30"/>
+                                        <state key="normal" title="Red">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeSkinSBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fef-6g-6TV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ktk-MH-Zrp">
+                                        <rect key="frame" x="162" y="5" width="96" height="30"/>
+                                        <state key="normal" title="Green">
+                                            <color key="titleColor" red="0.26355334879999998" green="1" blue="0.1316625183" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeSkinSBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2D8-BE-zdO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agn-uM-bt8">
+                                        <rect key="frame" x="266" y="5" width="96" height="30"/>
+                                        <state key="normal" title="Blue"/>
+                                        <connections>
+                                            <action selector="changeSkinSBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a7h-Ul-Wia"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.78392237279999999" blue="0.36516062090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="ecb-jx-W1v"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BYJ-1h-jXG">
+                                <rect key="frame" x="88" y="67" width="198" height="198"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="9Ou-IQ-ECf"/>
+                                    <constraint firstAttribute="width" constant="198" id="Edz-j1-0ka"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UYI-xq-Tgr">
+                                <rect key="frame" x="67" y="449" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="6XL-TH-EgJ"/>
+                                    <constraint firstAttribute="width" constant="240" id="wv6-sv-OSl"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y4r-SF-phj">
+                                <rect key="frame" x="105" y="276" width="165" height="165"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="MvT-DH-O6v"/>
+                                    <constraint firstAttribute="height" constant="165" id="cSq-GC-1Vx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BYJ-1h-jXG" firstAttribute="top" secondItem="T9J-d6-7QR" secondAttribute="bottom" constant="8" id="6zn-lU-fLx"/>
+                            <constraint firstItem="y4r-SF-phj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8x6-Eo-Dfw"/>
+                            <constraint firstAttribute="trailing" secondItem="T9J-d6-7QR" secondAttribute="trailing" id="9RU-8Y-T3P"/>
+                            <constraint firstItem="BYJ-1h-jXG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fm2-9R-j1t"/>
+                            <constraint firstItem="y4r-SF-phj" firstAttribute="top" secondItem="BYJ-1h-jXG" secondAttribute="bottom" constant="11" id="HC7-d1-w2p"/>
+                            <constraint firstItem="T9J-d6-7QR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="OGx-Fq-KdX"/>
+                            <constraint firstItem="UYI-xq-Tgr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hd6-mB-XBC"/>
+                            <constraint firstItem="T9J-d6-7QR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lnL-2l-2OL"/>
+                            <constraint firstItem="UYI-xq-Tgr" firstAttribute="top" secondItem="y4r-SF-phj" secondAttribute="bottom" constant="8" id="rNj-3A-x9I"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="circleImageView" destination="y4r-SF-phj" id="jE9-fV-O6D"/>
+                        <outlet property="rectImageView" destination="UYI-xq-Tgr" id="VPi-IK-1if"/>
+                        <outlet property="starImageView" destination="BYJ-1h-jXG" id="Tjr-8G-2ke"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239.5" y="429.5"/>
+        </scene>
+    </scenes>
+</document>
